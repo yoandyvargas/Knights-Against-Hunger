@@ -1,0 +1,110 @@
+.content-8 {
+  grid-area: content2;
+  background-color: #ffcb48;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "title"
+    "box";
+}
+
+.title {
+  max-width: 400px;
+  text-align: center;
+  padding-top: 20px;
+  color: black;
+  grid-area: "title";
+  margin: auto;
+}
+
+.box {
+  grid-area: "box";
+  place-self: center;
+  padding-bottom: 20px;
+  max-width: 600px;
+}
+
+.title h1 {
+  font-size: 32px;
+  line-height: 20px;
+  color: #256a82;
+  letter-spacing: 1px;
+  font-family: "Oswald", sans-serif;
+}
+
+.title p {
+  font-size: 14px;
+  line-height: 20px;
+  color: #256a82;
+  font-family: noto serif;
+}
+
+form {
+  max-width: 700px;
+
+  text-align: center;
+
+  background-color: white;
+  padding: 30px;
+  color: #5cbabb;
+}
+
+.form-control {
+  width: 550px;
+  background: transparent;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #5cbabb;
+  color: gray;
+  font-size: 18px;
+  margin-bottom: 16px;
+  font-family: "Oswald", sans-serif;
+  resize: none;
+}
+
+input {
+  height: 45px;
+}
+
+form .submit {
+  background-color: #ffcb48;
+  border-color: transparent;
+  color: #256a82;
+  font-size: 20px;
+
+  height: 40px;
+  width: 140px;
+  margin-top: 20px;
+  transition: 0.4s ease;
+  border-radius: 7px;
+  font-family: "Oswald", sans-serif;
+}
+
+form .submit:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+.note {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  color: #256a82;
+}
+
+.response {
+  place-self: center;
+  font-family: noto serif;
+  color: #256a82;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 599px) {
+  .form-control {
+    width: 300px;
+  }
+  .title {
+    padding: 10px;
+  }
+}

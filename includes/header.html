@@ -1,0 +1,40 @@
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oswald:300, 500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css" />
+    <script src="scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Knights Against Hunger</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+</head>
+
+<body>
+
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i></label>
+        <a href="index" id="logo-hover"><img src="img/kahlogo.png" class="logo"></a>
+        <ul>
+            <li class="list-item"><a href="javascript:void(0)" onclick=toggleAct() class="toggler">Take Action</a></li>
+            <div class="dropdown-content" id="act">
+                <li><a href="act">Act</a></li>
+                <li><a href="about">About</a></li>
+                <li><a href="whyhelp">Why Help</a></li>
+                <li><a href="students">Students</a></li>
+            </div>
+            <li class="list-item"><a href="javascript:void(0)" onclick=toggleHelp() class="toggler">How To Help </a>
+            </li>
+            <div class="dropdown-content-alt" id="help">
+                <li><a href="help">Help</a></li>
+
+                <li><a href="donate">Donate</a></li>
+                <li><a href="volunteer">Volunteer</a></li>
+            </div>
+            <li class="list-item"><a href="find">Find a Food Bank</a></li>
+            <li class="list-item" id="nav-btn"><a href="volunteer">Volunteer</a></li>
+            <li class="list-item" id="nav-btn-two"><a href="donate">Donate</a></li>
+        </ul>
+        </a>
+    </nav>
